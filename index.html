@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>git | source code management</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Pacifico' rel='stylesheet' type='text/css'>
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/csshake.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <style>
+        code {
+            font-weight: bold;
+            font: Droid Sans Mono !important;
+            font-family: Droid Sans Mono !important;
+            font-size:75px;
+        }
+        imply {
+            opacity: 1.000;
+            font-weight: 1;
+            color: #777;
+            font: Droid Sans Mono !important;
+            font-family: Droid Sans Mono !important;
+            font-size:75px;
+
+            -webkit-transition-delay: 5s linear;
+            -moz-transition-delay:    5s linear;
+            -ms-transition-delay:     5s linear;
+            -o-transition-delay:      5s linear;
+            transition-delay:         5s linear;
+        }
+        .present imply {
+            opacity: 0.000;
+            -webkit-transition-delay: 5s linear;
+            -moz-transition-delay:    5s linear;
+            -ms-transition-delay:     5s linear;
+            -o-transition-delay:      5s linear;
+            transition-delay:         5s linear;
+        }
+    </style>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div class="step" data-x="-20000" data-y="-1500" data-scale="6"></div>
+
+    <div class="step" data-x="-10000" data-y="-1500" data-scale="4">
+        <h1>git</h1>
+        <span>a source code management tool.</span>
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-1500">
+        <q>Don't you hate when Microsoft Word just dies in the middle of what you are doing?</q>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="-1500" >
+        <q>Wouldn't you like to have an undo button all the way back to the beginning?</q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500" >
+        <q>Wouldn't it be nice to work on a project with friends and always be able to suggest things without having to make tons of copys?</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500" >
+        <q>If you answered yes to any of the previous questions you should pay attention!</q>
+    </div>
+
+
+
+    <div class="step" data-x="0" data-y="0" data-scale="3" data-rotate="360">
+        <center><span>You really need to know how to use</span>
+        <h1 style="font-size: 150px;"><b>git</b></h1></center>
+    </div>
+
+
+
+    <div class="step" data-x="-2000" data-y="4000" data-rotate="180" data-scale="2">
+        <p>Why would you not want to use it?</p>
+        <br />
+        <p>It's used by:</p>
+    </div>
+    <div class="step" data-x="-2000" data-y="4000" data-z="-1000" data-scale="1">
+        <img width="400px" height="141" src="Google.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="4000" data-z="-2000" data-rotate="180" data-scale="1">
+        <img width="400px" height="150px" src="Facebook.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="4000" data-z="-3000" data-scale="1">
+        <img width="400px" height="74px" src="twitter.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="6000" data-z="-1000" data-rotate="180" data-scale="1">
+        <img width="400px" height="97px" src="LinkedIn.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="6000" data-z="-2000" data-scale="1">
+        <img width="400px" height="143px" src="Android.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="6000" data-z="-3000" data-rotate="180" data-scale="1">
+        <img width="400px" height="147px" src="Microsoft.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="8000" data-z="-1000" data-scale="1">
+        <img width="400px" height="198px" src="Linux.png">
+    </div>
+    <div class="step" id="ing" data-x="-2000" data-y="8000" data-z="-2000" data-rotate="180" data-scale="1">
+        <p><b>Do I <span style="font-size:70px;font-family: 'Pacifico', cursive;">really</span> need to go on?</b></p>
+    </div>
+
+    <!--<div class="step" data-x="-500" data-y="1100" data-rotate="180" data-scale="3">
+        <p>Now for how to use it</p>
+    </div>-->
+
+    <div class="step" data-x="2000" data-y="1000" data-rotate="270" data-scale="2">
+        <code>git init</code><imply>ialize</imply><br />
+        <p>This is how we begin.</p><br />
+        <p>After this point git keeps track of everything you do in its folder.</p>
+        <q>This step makes the folder into a "repository" or "repo" for short.</q>
+    </div>
+
+    <div class="step" data-x="3000" data-y="-300" data-scale="1">
+        <code>git add .</code><br />
+        <b>or</b><br />
+        <code>git add </code><span>aDocument.txt</span><br />
+        <q>With this command we <b>add</b> any changes we made, to the files, into the repo.</q>
+    </div>
+
+    <div class="step" data-x="3000" data-y="700" data-rotate="90" data-scale="1">
+        <code>git commit</code><br />
+        <q>Is how to save a snapshot of the folder after you have made all the changes you wish to before you continue editing.</q><br />
+        <q>With source code this will <b>commit</b> you to making sure your code works.</q>
+    </div>
+
+    <div class="step" data-x="3700" data-y="700" data-rotate="270" data-scale="1">
+        <code>git status</code><br />
+        <p>How do I know what I changed?</p>
+        <p>This command shows you what <b>branch</b> you are on and what files you have changed since the <b>HEAD</b> commit.</p>
+        <!-- the head commit is the most recent commit on this branch -->
+    </div>
+    <div class="step" data-x="3800" data-y="-200" data-rotate="90" data-scale="1">
+        <code>git checkout -b</code><imply>ranch</imply><br />
+        <q>This feature allows you to make a <b>branch</b> of the repository allowing you to change code but still have the main, usually stable, version.</q>
+    </div>
+    <div class="step" data-x="3400" data-y="1500" data-rotate="0" data-scale="1">
+        <code>git branch</code><br />
+        <q>This feature allows you to see what <b>branch</b> you are currently on and what other branches are available to see.</q>
+    </div>
+    <div class="step" data-x="4500" data-y="700" data-rotate="90" data-scale="1">
+        <code>git reset</code><br />
+        <q>O.M.G. I just added things that weren't supposed to be in the repository!</q><br />
+        <q>This allows you to remove everything from you pending commit so you can only add what you really want to be in there.</q>
+    </div>
+    <div class="step" data-x="4500" data-y="1700" data-rotate="180" data-scale="1">
+        <code>git reset --hard HEAD~</code><br />
+        <q>Wow I just commited something that was completely wrong.</q><br />
+        <q>This allows you to jump back in time. It deletes and resets your entire repository back one whole commit</q><br />
+        <q>This is where you can go back in time to the beginning.</q><br />
+        <q>(If you have not shared it with anyone.)</q>
+    </div>
+
+    <!--
+    this begins the conceptual idea behind commits/log/flow
+     -->
+
+    <div class="step commit" data-x="4000" data-y="4000" data-rotate="0" data-scale="1">
+        <center>initial commit<br /><br />
+        <q>created abcs</q></center>
+    </div>
+    <div class="step commit" data-x="4700" data-y="4000" data-rotate="0" data-scale="1">
+        <center>commit 1<br /><br />
+        <q>added def to abcs</q></center>
+    </div>
+    <div class="step commit" data-x="5400" data-y="4000" data-rotate="0" data-scale="1">
+        <center>commit 2<br /><br />
+        <q>added ghi to abcs</q></center>
+    </div>
+    <div class="step commit" data-x="6100" data-y="4000" data-rotate="0" data-scale="1">
+        <center>commit 3<br /><br />
+        <q>added jkl to abcs</q></center>
+    </div>
+
+    <!--
+    demonstrating branch flow
+    -->
+
+    <div class="step commit" data-x="4000" data-y="6000" data-rotate="0" data-scale="1">
+        <center>initial commit<br /><br />
+        <q>Started a book</q></center>
+    </div>
+    <div class="step commit" data-x="4700" data-y="6000" data-rotate="0" data-scale="1">
+        <center>commit 1<br /><br />
+        <q>added page 1</q></center>
+    </div>
+    <div class="step commit" data-x="5400" data-y="6700" data-rotate="0" data-scale="1">
+        <center>Branch "idea"</center>
+        <center>commit 2<br /><br />
+        <q>rewrote some of page 1</q></center>
+    </div>
+    <div class="step commit" data-x="5400" data-y="6000" data-rotate="0" data-scale="1">
+        <center>commit 3<br /><br />
+        <q>added page 2</q></center>
+    </div>
+    <div class="step commit" data-x="6100" data-y="6700" data-rotate="0" data-scale="1">
+        <center>Branch "idea"</center>
+        <center>commit 4<br /><br />
+        <q>finished rewriting page 1</q></center>
+    </div>
+    <div class="step commit" data-x="6100" data-y="6000" data-rotate="0" data-scale="1">
+        <center>commit 5<br /><br />
+        <q>added page 3</q></center>
+    </div>
+    <div class="step commit" data-x="6800" data-y="6000" data-rotate="360" data-scale="1">
+        <center>branch "idea" merged</center>
+        <center>commit 6<br /><br />
+        <q>brought all the changes to page 1 into the master branch</q></center>
+    </div>
+    <div class="step commit" data-x="7500" data-y="6000" data-rotate="0" data-scale="1">
+        <center>commit 7<br /><br />
+        <q>added page 4</q></center>
+    </div>
+
+
+    <div class="step" data-x="6000" data-y="-5000" data-rotate="" data-scale="1">
+        <span style="color:red;font-weight:bold;">Warnings:</span>
+        <ul style="list-style:circle;">
+            <li>This is <b>NOT</b> for anything except text. ie: compiled documents/programs (.doc/.zip are NOT text documents)</li><br />
+            <li>This <b>WILL</b> permanently save anything saved to a commit. (Especially Passwords!)</li><br />
+            <li>This is <b>NOT</b> a backup tool. (You can crash/freeze your computer if you try.)</li>
+        </ul>
+    </div>
+
+
+    <!--
+
+    OVERVIEW
+
+    -->
+    <div id="overview" class="step" data-x="0" data-y="0" data-scale="10">
+    </div>
+
+    <!--
+
+    BACKGROUNDS
+
+    -->
+
+    <div class="step" data-x="-2000" data-y="8000" data-z="-3000" data-rotate="0" data-scale="1">
+        <img width="250px" height="250px" src="Perl.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="8000" data-z="-3100" data-rotate="90" data-scale="1">
+        <img width="400px" height="225px" src="Netflix.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="8000" data-z="-3200" data-rotate="180" data-scale="1">
+        <img width="400px" height="548px" src="gnome.png">
+    </div>
+    <div class="step" data-x="-2000" data-y="8000" data-z="-3300" data-rotate="270" data-scale="1">
+        <img width="400px" height="225px" src="eclipse.png">
+    </div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
